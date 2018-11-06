@@ -23,12 +23,15 @@ printf "\nusing the blog post @ ${RED}https://linuxize.com/post/how-to-install-v
 
 printf "\n"
 
+printf "\n${GREEN}Updating your computer${NC}\n\n"
 sudo apt update
 sudo apt install software-properties-common apt-transport-https wget
 
+printf "\n${GREEN}Downloading vscode${NC}\n\n"
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 
+printf "\n${GREEN}Installing vscode${NC}\n\n"
 sudo apt install code
 
 printf "\n\nDone!\n"
