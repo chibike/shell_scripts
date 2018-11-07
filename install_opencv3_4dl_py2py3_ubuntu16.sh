@@ -111,8 +111,12 @@ sudo ldconfig
 cd ~/.virtualenvs/dl_py2/lib/python2.7/site-packages
 ln -s /usr/local/lib/python2.7/dist-packages/cv2.so cv2.so
 
+cd /usr/local/lib/python3.5/dist-packages/
+sudo ln -s /usr/local/lib/python3.5/dist-packages/cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
+
 cd ~/.virtualenvs/dl_py3/lib/python3.5/site-packages
-ln -s /usr/local/lib/python3.5/dist-packages/cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
+#ln -s /usr/local/lib/python3.5/dist-packages/cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
+ln -s /usr/local/lib/python3.5/dist-packages/cv2.so cv2.so
 
 
 #Step 5.4: Create symlink in virtual environment
