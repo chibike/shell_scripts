@@ -45,49 +45,29 @@ sudo apt-get install libhdf5-serial-dev graphviz
 sudo apt-get install libopenblas-dev libatlas-base-dev gfortran
 sudo apt-get install python-tk python3-tk python-imaging-tk
 
-
-printf "\n\nInstalling python\n"
-sudo apt-get install python2.7-dev python3-dev
-
-printf "\n\nConfiguring your virtual enviroment\n"
-wget https://bootstrap.pypa.io/get-pip.py
-sudo python get-pip.py
-sudo python3 get-pip.py
-sudo pip install virtualenv virtualenvwrapper
-sudo rm -rf ~/.cache/pip get-pip.py
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-source /usr/local/bin/virtualenvwrapper.sh
-echo -e "\n# virtualenv and virtualenvwrapper" >> ~/.bashrc
-echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.bashrc
-echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.bashrc
-echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.bashrc
-source ~/.bashrc
-mkvirtualenv dl4cv -p python3
-workon dl4cv
-pip install numpy
-
-
 printf "\n\nInstalling opencv\n"
 cd ~
 wget https://raw.githubusercontent.com/chibike/shell_scripts/master/install_opencv3_4dl_py2py3_ubuntu16.sh
 chmod +x install_opencv3_4dl_py2py3_ubuntu16.sh
 sudo ./install_opencv3_4dl_py2py3_ubuntu16.sh
 
-printf "\n\n\n${RED}Testing OpenCV${NC}"
-python -c "import cv2; print(cv2.__version__)"
-printf "\n\nyou should see the installed opencv version above\n\n\n"
+#printf "\n\n\n${RED}Testing OpenCV${NC}"
+#python -c "import cv2; print(cv2.__version__)"
+#printf "\n\nyou should see the installed opencv version above\n\n\n"
 
 printf "\n\nInstalling Keras\n"
-pip install scipy matplotlib pillow
-pip install imutils h5py requests progressbar2
-pip install scikit-learn scikit-image
-pip install tensorflow
-pip install keras
+sudo -H pip2 install scipy matplotlib pillow imutils h5py requests progressbar2 scikit-learn scikit-image tensorflow keras
+sudo -H pip3 install numpy scipy matplotlib pillow imutils h5py requests progressbar2 scikit-learn scikit-image tensorflow keras
 
-printf "\n\n\n${RED}Testing Keras${NC}"
-python -c "import keras; print(\"install successful\")"
-printf "\n\nyou should see the quote ${RED}\"install successful\"${NC} above\n\n\n"
+#pip install scipy matplotlib pillow
+#pip install imutils h5py requests progressbar2
+#pip install scikit-learn scikit-image
+#pip install tensorflow
+#pip install keras
+
+#printf "\n\n\n${RED}Testing Keras${NC}"
+#python -c "import keras; print(\"install successful\")"
+#printf "\n\nyou should see the quote ${RED}\"install successful\"${NC} above\n\n\n"
 
 
 printf "\n\n\n${RED}Before${NC} you wrap up, take a second to "
