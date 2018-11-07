@@ -37,6 +37,35 @@ sudo -H pip3 install -U pip numpy
 sudo -H pip2 install numpy scipy matplotlib scikit-image scikit-learn ipython
 sudo -H pip3 install numpy scipy matplotlib scikit-image scikit-learn ipython
 
+sudo -H pip2 install virtualenv virtualenvwrapper
+sudo -H pip3 install virtualenv virtualenvwrapper
+
+echo "# Virtual Environment Wrapper"  >> ~/.bashrc
+echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.bashrc
+source ~/.bashrc
+
+############ For Python 2 ############
+# create virtual environment
+mkvirtualenv dl_py2 -p python2
+workon dl_py2
+
+# install dependencies
+pip install numpy scipy matplotlib scikit-image scikit-learn ipython
+
+# quit virtual environment
+deactivate
+
+############ For Python 3 ############
+# create virtual environment
+mkvirtualenv dl_py3 -p python3
+workon dl_py3
+
+# install dependencies
+pip install numpy scipy matplotlib scikit-image scikit-learn ipython
+
+# quit virtual environment
+deactivate
+
 #Download opencv from Github
 git clone https://github.com/opencv/opencv.git
 cd opencv
@@ -78,29 +107,6 @@ eval $mkcmd
 sudo make install
 sudo sh -c 'echo "/usr/local/lib" >> /etc/ld.so.conf.d/opencv.conf'
 sudo ldconfig
-
-sudo -H pip2 install virtualenv virtualenvwrapper
-sudo -H pip3 install virtualenv virtualenvwrapper
-
-echo "# Virtual Environment Wrapper"  >> ~/.bashrc
-echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.bashrc
-source ~/.bashrc
-
-############ For Python 2 ############
-# create virtual environment
-mkvirtualenv dl_py2 -p python2
-workon dl_py2
-
-# quit virtual environment
-deactivate
-
-############ For Python 3 ############
-# create virtual environment
-mkvirtualenv dl_py3 -p python3
-workon dl_py3
-
-# quit virtual environment
-deactivate
 
 cd ~/.virtualenvs/dl_py2/lib/python2.7/site-packages
 ln -s /usr/local/lib/python2.7/dist-packages/cv2.so cv2.so
