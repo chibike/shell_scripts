@@ -45,6 +45,8 @@ catkin_make
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
+sudo rosdep fix-permissions
+
 sudo apt-get install ros-kinetic-turtlebot ros-kinetic-turtlebot-apps ros-kinetic-turtlebot-interactions ros-kinetic-turtlebot-simulator ros-kinetic-kobuki-ftdi ros-kinetic-ar-track-alvar-msgs
 sudo apt-get install python-rosdep python-wstool
 rosdep update
@@ -66,6 +68,10 @@ echo "#export ROS_IP=192.168.100.100" >> ~/.bashrc
 
 echo "#alias cd_ws='cd ~/catkin_ws/src'" >> ~/.bashrc
 echo "#alias mk_ws='cd ~/catkin_ws & catkin_make'" >> ~/.bashrc
+
+source ~/.bashrc
+
+sudo rosdep fix-permissions
 
 source ~/.bashrc
 
