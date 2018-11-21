@@ -50,7 +50,7 @@ mkvirtualenv dl_py2 -p python2
 workon dl_py2
 
 # install dependencies
-pip install numpy scipy matplotlib scikit-image scikit-learn ipython
+pip install --user --upgrade numpy scipy matplotlib scikit-image scikit-learn ipython
 
 # quit virtual environment
 deactivate
@@ -61,7 +61,7 @@ mkvirtualenv dl_py3 -p python3
 workon dl_py3
 
 # install dependencies
-pip install numpy scipy matplotlib scikit-image scikit-learn ipython
+pip install --user --upgrade numpy scipy matplotlib scikit-image scikit-learn ipython
 
 # quit virtual environment
 deactivate
