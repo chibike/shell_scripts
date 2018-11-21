@@ -56,8 +56,8 @@ sudo ./install_opencv3_4dl_py2py3_ubuntu16.sh
 #printf "\n\nyou should see the installed opencv version above\n\n\n"
 
 printf "\n\nInstalling Keras\n"
-sudo -H pip2 install scipy matplotlib pillow imutils h5py requests progressbar2 scikit-learn scikit-image tensorflow keras
-sudo -H pip3 install numpy scipy matplotlib pillow imutils h5py requests progressbar2 scikit-learn scikit-image tensorflow keras
+sudo -H pip2 install scipy matplotlib pillow imutils h5py requests progressbar2 scikit-learn scikit-image tensorflow tensorflow-gpu keras
+sudo -H pip3 install numpy scipy matplotlib pillow imutils h5py requests progressbar2 scikit-learn scikit-image tensorflow tensorflow-gpu keras
 
 #pip install scipy matplotlib pillow
 #pip install imutils h5py requests progressbar2
