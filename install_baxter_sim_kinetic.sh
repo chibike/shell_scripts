@@ -65,7 +65,7 @@ printf "\n${ORANGE}./baxter.sh sim${NC}\n"
 printf "\n${ORANGE}roslaunch baxter_gazebo baxter_world.launch${NC}\n"
 
 
-printf "\n\n${GREEN}If you loved it show some love to the author @ ${ORANGE}https://linkedin.com/in/chibike/${GREEN}${NC}\n"
+printf "\n\n${GREEN}If you loved it please show some love to the author @ ${ORANGE}https://linkedin.com/in/chibike/${GREEN}${NC}\n"
 printf "\nThank you\n"
 
 
