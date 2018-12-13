@@ -14,7 +14,7 @@ cd ~/baxter_ws/
 nano baxter.sh
 ```
 
-###### Edit the your_ip field
+### Edit the your_ip field
 
 Change your_ip="192.168.XXX.XXX" to your_ip="127.0.0.1"
 
