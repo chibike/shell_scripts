@@ -20,17 +20,24 @@ nano baxter.sh
 #### Update the your_ip field
 
 Change from
+
 your_ip="192.168.XXX.XXX"
 
+
 To
+
 your_ip="127.0.0.1"
 
 
 
+
 Change from
+
 ros_version="indigo"
 
+
 To
+
 ros_version="kinetic"
 
 #### Test Installation
