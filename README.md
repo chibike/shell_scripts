@@ -32,8 +32,10 @@ nano baxter.sh
 
 ```
 # In a new terminal
-~/baxter_ws/baxter.sh sim; roslaunch baxter_gazebo baxter_world.launch
+cd ~/baxter_ws/
+./baxter.sh sim; roslaunch baxter_gazebo baxter_world.launch
 
 # In a different terminal
-~/baxter_ws/baxter.sh sim; rosrun baxter_tools tuck_arms.py -u
+cd ~/baxter_ws/
+./baxter.sh sim; rosrun baxter_tools tuck_arms.py -u
 ```
