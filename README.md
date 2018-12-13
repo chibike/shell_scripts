@@ -17,7 +17,7 @@ cd ~/baxter_ws/
 nano baxter.sh
 ```
 
-### Update the your_ip field
+#### Update the your_ip field
 
 Change from
 your_ip="192.168.XXX.XXX"
@@ -33,7 +33,7 @@ ros_version="indigo"
 To
 ros_version="kinetic"
 
-### Test Installation
+#### Test Installation
 
 ```
 # In a new terminal
