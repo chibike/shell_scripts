@@ -13,7 +13,7 @@ contains shell scripts for some install tasks
 
 ## To Install the Baxter Simulator on ROS kinetic
 
-'''
+```
 # Download and install the sim
 wget https://raw.githubusercontent.com/chibike/shell_scripts/master/install_baxter_sim_kinetic.sh
 chmod +x install_baxter_sim_kinetic.sh
@@ -22,7 +22,7 @@ chmod +x install_baxter_sim_kinetic.sh
 # Customize the baxter.sh script
 cd ~/baxter_ws/
 nano baxter.sh
-'''
+```
 
 ###### Edit the your_ip field
 ###### **your_ip=192.168.XXX.XXX** to **your_ip=127.0.0.1**
@@ -30,10 +30,10 @@ nano baxter.sh
 
 ### Test Using
 
-'''
+```
 # In a new terminal
 ~/baxter_ws/baxter.sh sim; roslaunch baxter_gazebo baxter_world.launch
 
 # In a different terminal
 ~/baxter_ws/baxter.sh sim; rosrun baxter_tools tuck_arms.py -u
-'''
+```
