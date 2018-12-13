@@ -19,19 +19,32 @@ nano baxter.sh
 
 ### Update the your_ip field
 
-Change your_ip="192.168.XXX.XXX" to your_ip="127.0.0.1"
+Change from
+your_ip="192.168.XXX.XXX"
 
-Change ros_version="kinetic"
+To
+your_ip="127.0.0.1"
+
+
+
+Change from
+ros_version="indigo"
+
+To
+ros_version="kinetic"
 
 ### Test Installation
 
 ```
 # In a new terminal
+
 cd ~/baxter_ws/
 ./baxter.sh sim
 roslaunch baxter_gazebo baxter_world.launch
 
+
 # In a different terminal
+
 cd ~/baxter_ws/
 ./baxter.sh sim
 rosrun baxter_tools tuck_arms.py -u
