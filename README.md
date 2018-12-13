@@ -1,5 +1,5 @@
-## shell_scripts
-contains shell scripts for some install tasks
+# My Common Shell Scripts
+This repository contains certain shell scripts written to install a few robotics packages on ubuntu 16.04
 
 ## To Install the Baxter Simulator on ROS kinetic
 
@@ -50,12 +50,20 @@ cd ~/baxter_ws/
 rosrun baxter_tools tuck_arms.py -u
 ```
 
-### To Setup Your Ubuntu 16.04 for DL with OpenCV3 follow the instructions below (for python2 and python3)
-1. wget https://raw.githubusercontent.com/chibike/shell_scripts/master/setup_ubuntu16_4_dl_py2py3.sh
-2. chmod +x setup_ubuntu16_4_dl_py2py3.sh
-3. sudo ./setup_ubuntu16_4_dl_py2py3.sh
+## To Setup Your Ubuntu 16.04 for DL with OpenCV3 follow the instructions below (for python2 and python3)
+
+```
+wget https://raw.githubusercontent.com/chibike/shell_scripts/master/setup_ubuntu16_4_dl_py2py3.sh
+chmod +x setup_ubuntu16_4_dl_py2py3.sh
+sudo ./setup_ubuntu16_4_dl_py2py3.sh
+```
 
 ## To Install OpenCV2 (only) on Your Ubuntu 16.04 follow the instructions below (for python2 and python3)
-1. wget https://raw.githubusercontent.com/chibike/shell_scripts/master/install_opencv3_4dl_py2py3_ubuntu16.sh
-2. chmod +x install_opencv3_4dl_py2py3_ubuntu16.sh
-3. sudo ./install_opencv3_4dl_py2py3_ubuntu16.sh
+
+```
+wget https://raw.githubusercontent.com/chibike/shell_scripts/master/install_opencv3_4dl_py2py3_ubuntu16.sh
+chmod +x install_opencv3_4dl_py2py3_ubuntu16.sh
+sudo ./install_opencv3_4dl_py2py3_ubuntu16.sh
+```
+
+
