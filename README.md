@@ -5,11 +5,14 @@ contains shell scripts for some install tasks
 
 ```
 # Download and install the sim
+
 wget https://raw.githubusercontent.com/chibike/shell_scripts/master/install_baxter_sim_kinetic.sh
 chmod +x install_baxter_sim_kinetic.sh
 ./install_baxter_sim_kinetic.sh
 
+
 # Customize the baxter.sh script
+
 cd ~/baxter_ws/
 nano baxter.sh
 ```
