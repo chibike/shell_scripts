@@ -15,12 +15,12 @@ sudo tar -xvf $D_FILE_NAME
 sudo mv go /usr/local
 
 # setting up Go Enviroment
-export GOROOT=/usr/local/go
+echo "export GOROOT=/usr/local/go" >> ~/.bashrc
 
 mkdir -p $W_DIR
-export GOPATH=$HOME/$W_DIR
+echo "export GOPATH=$HOME/$W_DIR" >> ~/.bashrc
 
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+echo "export PATH=$GOPATH/bin:$GOROOT/bin:$PATH" >> ~/.bashrc
 
 # ------
 echo "go is now installed. You can verify your connection using the following commands"
