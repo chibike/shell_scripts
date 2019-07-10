@@ -11,7 +11,7 @@ W_DIR=$HOME/go_project
 wget -c https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz -O $D_FILE_NAME
 
 # extract and move
-sudo tar -xvf D_FILE_NAME
+sudo tar -xvf $D_FILE_NAME
 sudo mv go /usr/local
 
 # setting up Go Enviroment
