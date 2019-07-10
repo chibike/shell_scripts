@@ -22,6 +22,8 @@ echo "export GOPATH=$HOME/$W_DIR" >> ~/.bashrc
 
 echo "export PATH=$GOPATH/bin:$GOROOT/bin:$PATH" >> ~/.bashrc
 
+rm -r $D_FILE_NAME install_golang_ubuntu.sh
+
 # ------
 echo "go is now installed. You can verify your connection using the following commands"
 echo "go version"
