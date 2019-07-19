@@ -18,9 +18,9 @@ sudo mv go /usr/local
 echo "export GOROOT=/usr/local/go" >> ~/.bashrc
 
 mkdir -p $W_DIR
-echo "export GOPATH=$HOME/$W_DIR" >> ~/.bashrc
+echo "export GOPATH=\$HOME/$W_DIR" >> ~/.bashrc
 
-echo "export PATH=$GOPATH/bin:$GOROOT/bin:$PATH" >> ~/.bashrc
+echo "export PATH=\$GOPATH/bin:\$GOROOT/bin:\$PATH" >> ~/.bashrc
 
 rm -r $D_FILE_NAME install_golang_ubuntu.sh
 
