@@ -24,3 +24,21 @@ kubectl version
 # sudo apt-get update
 # sudo apt-get install -y kubectl
 
+# echo use to check if virtualization is supported on Linux,
+# run the following command and verify that the output is non-empty
+# grep -E --color 'vmx|svm' /proc/cpuinfo
+
+echo "installing virtualbox"
+sudo apt install virtualbox
+
+echo "Install Minikube via direct download"
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube
+sudo install minikube /usr/local/bin
+
+echo "If you have previously installed minikube, and run:"
+echo "minikube start"
+echo "And this command returns an error:"
+echo "machine does not exist"
+echo "You need to clear minikube’s local state:"
+echo "minikube delete"
+
